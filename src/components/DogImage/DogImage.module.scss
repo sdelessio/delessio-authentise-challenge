@@ -1,0 +1,15 @@
+.DogImage {
+  flex: 1 1 300px;
+  position: relative;
+  height: auto;
+  img {
+    height: 100%;
+    width: 100%;
+  }
+  .RemoveButton {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    margin: 10px;
+  }
+}
