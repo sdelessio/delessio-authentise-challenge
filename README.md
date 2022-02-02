@@ -1,4 +1,22 @@
-# Getting Started with Create React App
+# Running Dog API challenge
+
+You will need to have node installed to run npm commands. [Download node here](https://nodejs.org/en/download/).
+
+## Run the app
+
+Install dependencies with:
+
+### `npm install`
+
+To make sure that reacts material library is installed, run:
+
+### `npm install @material-ui/core`
+
+then run the app in development mode with:
+
+### `npm run start`
+
+<!-- # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -67,4 +85,4 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 
 ### `npm run build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify) -->
