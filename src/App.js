@@ -35,6 +35,16 @@ function App() {
     setSelectList([...selectList, { dogName: select, dogImg: img }]);
   };
 
+  const uniqueArray = selectList.filter((value, index) => {
+    const _value = JSON.stringify(value);
+    return (
+      index ===
+      selectList.findIndex((obj) => {
+        return JSON.stringify(obj) === _value;
+      })
+    );
+  });
+
   const removeDog = (e) => {
     e.target.parentElement.remove();
   };
@@ -55,10 +65,10 @@ function App() {
       />
 
       <Grid className="ImageGrid">
-        {selectList.length === 0
+        {uniqueArray.length === 0
           ? "No dogs selected"
-          : selectList &&
-            selectList.map((dog, index) => (
+          : uniqueArray &&
+            uniqueArray.map((dog, index) => (
               <DogImage
                 index={index}
                 src={dog.dogImg}
