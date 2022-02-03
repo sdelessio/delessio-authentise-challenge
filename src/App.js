@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useLayoutEffect, useEffect } from "react";
 import logo from "./logo.svg";
 import "./App.scss";
 import Form from "./components/Form/Form.js";
@@ -31,6 +31,10 @@ function App() {
 
   const submitForm = () => {
     const dogSelectorValue = document.getElementById("dog-selector").value;
+    if (dogSelectorValue === undefined || dogSelectorValue === "") {
+      alert("Please select a dog breed");
+      return;
+    }
     setSelect(dogSelectorValue);
     setSelectList([...selectList, { dogName: select, dogImg: img }]);
   };
