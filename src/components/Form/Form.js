@@ -6,15 +6,6 @@ import TextField from "@mui/material/TextField";
 import Autocomplete from "@mui/material/Autocomplete";
 
 function Form(props) {
-  function submitForm() {
-    console.log(props.breedData);
-  }
-
-  // function handleChange(event) {
-  //   const { dog } = event.target;
-  //   this.setState({ dog: dog });
-  // }
-
   return (
     <div>
       <form className="Form" data-testid="Form">
